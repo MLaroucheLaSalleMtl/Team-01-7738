@@ -25,7 +25,7 @@ public class TankControls : MonoBehaviour
 
         }
         else if (Input.GetAxis("Mouse X") > 0.1 || Input.GetAxis("Mouse X") < -0.1)
-            transform.Rotate(0, Input.GetAxis("Mouse X") * Time.deltaTime * sensitivityX , 0);
+            transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX , 0);
 
         transform.Translate(0f, 0f, walkingSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
     }
