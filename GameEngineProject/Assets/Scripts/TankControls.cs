@@ -9,8 +9,12 @@ public class TankControls : MonoBehaviour
     [SerializeField] float sensitivityX = 15f;
     [SerializeField] private float walkingSpeed = 1f;
 
+    [SerializeField] private Animator anim;
+
     void Start()
     {
+        anim = GetComponent<Animator>();
+
         if (GetComponent<Rigidbody>())
             GetComponent<Rigidbody>().freezeRotation = true;
     }
@@ -28,5 +32,15 @@ public class TankControls : MonoBehaviour
             transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX , 0);
 
         transform.Translate(0f, 0f, walkingSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+
+        if (Input.GetButtonDown("Vertical") && Input.GetButtonDown("Fire3"))
+        {
+            anim.SetBool("Running",true);
+        }
+        else if (Input.GetButtonDown("Vertical"))
+        {
+            anim.SetBool("Running", false);
+            anim.SetFloat("CasualWalk", Input.GetAxis("Vertical"));
+        }
     }
 }
