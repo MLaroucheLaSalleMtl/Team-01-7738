@@ -8,6 +8,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
 
+    private void Start()
+    {
+        PanelToggle(0);        
+    }
+
     public void PanelToggle(int position)
     {
         Input.ResetInputAxes();
