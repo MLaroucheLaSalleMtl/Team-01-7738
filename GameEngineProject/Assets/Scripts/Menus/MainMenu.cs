@@ -8,9 +8,17 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
 
-    private void Start()
+    void Start()
     {
         PanelToggle(0);        
+    }
+
+    public void QuitBtn()
+    {
+        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 
     public void PanelToggle(int position)
