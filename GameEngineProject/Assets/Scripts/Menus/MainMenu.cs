@@ -2,15 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private AsyncOperation async;
+
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
 
     void Start()
     {
         PanelToggle(0);        
+    }
+
+    public void StartBtn()
+    {
+        if (async == null)
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            async = SceneManager.LoadSceneAsync(currentScene.buildIndex + 1);
+            async.allowSceneActivation = true;
+        }
     }
 
     public void QuitBtn()
