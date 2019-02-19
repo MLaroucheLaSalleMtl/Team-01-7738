@@ -1,11 +1,23 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Inventory : MonoBehaviour
 {
     [SerializeField] List<Item> items;
     [SerializeField] Transform itemsParent;
     [SerializeField] ItemSlot[] itemSlots;
+
+    public event Action<Item> OnItemRightClickedEvent;
+
+    private void Awake()
+    {
+        for (int i = 0; i < itemSlots.Length; i++)
+        {
+            itemSlots[i].OnRightClickEvent += OnItemRightClickedEvent;
+        }
+    }
+
 
     private void OnValidate()
     {
@@ -22,7 +34,7 @@ public class Inventory : MonoBehaviour
     private void RefreshUI()
     {
         int i = 0;
-        for (i= 0; i < items.Count && i < itemSlots.Length; i++)
+        for (; i < items.Count && i < itemSlots.Length; i++)
         {
             itemSlots[i].Item = items[i];
         }
