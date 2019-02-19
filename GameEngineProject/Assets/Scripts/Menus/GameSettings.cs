@@ -6,27 +6,34 @@ using UnityEngine.Audio;
 
 public class GameSettings : MonoBehaviour
 {
-    [SerializeField] private Toggle audioToggle;
+    private Resolution[] resolutions;
+
+    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private Toggle toggleAudio;
+    [SerializeField] private Toggle toggleFullScreen;
     [SerializeField] private Slider musicVolume;
     [SerializeField] private Slider sfxVolume;
-    [SerializeField] private AudioMixer audioMixer;
-    [SerializeField] private Dropdown qualityLevel;
+    [SerializeField] private Dropdown dropdownQualityLevel;
+    [SerializeField] private Dropdown dropdownResolution;
 
     void Start()
     {
-        audioToggle.isOn = (PlayerPrefs.GetInt("audioMute") == 1) ?  true : false;
+        toggleAudio.isOn = (PlayerPrefs.GetInt("audioMute") == 1) ? true : false;
+        toggleFullScreen.isOn = (PlayerPrefs.GetInt("fullscreen") == 1) ? true : false;
         musicVolume.value = PlayerPrefs.GetFloat("musicVolume", 0);
         audioMixer.SetFloat("musicVolume", musicVolume.value);
         sfxVolume.value = PlayerPrefs.GetFloat("sfxVolume", 0);
         audioMixer.SetFloat("sfxVolume", sfxVolume.value);
 
         SetQuality(PlayerPrefs.GetInt("qualityIndex", QualitySettings.GetQualityLevel()));
+
+        GetResolutions();
     }
 
     public void MuteAudio()
     {
-        audioMixer.SetFloat("masterVolume", (audioToggle.isOn) ? 0.0f : -80.0f);
-        PlayerPrefs.SetInt("audioMute", (audioToggle.isOn) ? 1 : 0);
+        audioMixer.SetFloat("masterVolume", (toggleAudio.isOn) ? 0.0f : -80.0f);
+        PlayerPrefs.SetInt("audioMute", (toggleAudio.isOn) ? 1 : 0);
     }
 
     public void SetVolumeMusic()
@@ -46,7 +53,44 @@ public class GameSettings : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
         PlayerPrefs.SetInt("qualityIndex", qualityIndex);
 
-        qualityLevel.value = qualityIndex;
-        qualityLevel.RefreshShownValue();
+        dropdownQualityLevel.value = qualityIndex;
+        dropdownQualityLevel.RefreshShownValue();
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        //PlayerPrefs.SetInt("resolutionIndex", resolutionIndex);
+    }
+
+    public void FullScreen()
+    {
+        Screen.fullScreen = toggleFullScreen.isOn;
+        PlayerPrefs.SetInt("fullscreen", (toggleFullScreen.isOn) ? 1 : 0);
+    }
+
+    void GetResolutions()
+    {
+        resolutions = Screen.resolutions;
+
+        dropdownResolution.ClearOptions();
+
+        List<string> options = new List<string>();
+
+        int currentResolutionIdex = 0; //PlayerPrefs.GetInt("resolutionIndex", 0);
+
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+                currentResolutionIdex = i;
+        }
+
+        dropdownResolution.AddOptions(options);
+        dropdownResolution.value = currentResolutionIdex;
+        dropdownResolution.RefreshShownValue();
     }
 }
