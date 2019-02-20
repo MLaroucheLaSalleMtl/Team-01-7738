@@ -18,6 +18,6 @@ public class SelectableObject : MonoBehaviour, IPointerEnterHandler, IDeselectHa
 
     public void OnSelect(BaseEventData eventData)
     {
-        selectedSound.Play();
+        //selectedSound.Play();
     }
 }
