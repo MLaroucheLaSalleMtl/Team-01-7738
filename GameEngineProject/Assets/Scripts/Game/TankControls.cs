@@ -42,5 +42,36 @@ public class TankControls : MonoBehaviour
             anim.SetBool("Running", false);
             anim.SetFloat("CasualWalk", Input.GetAxis("Vertical"));
         }
+
+
+
+       
+
+
+
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+
+    }
+
+    public void LoadData()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        // Add what you want to Save here 
+
+        // Example: health = data.health
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
+
+
+
     }
 }
