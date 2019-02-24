@@ -9,7 +9,8 @@ public class TankControls : MonoBehaviour
     [SerializeField] float sensitivityX = 15f;
     [SerializeField] private float walkingSpeed = 1f;
 
-    [SerializeField] private Animator anim;
+    private Animator anim;
+    private Vector3 direction = Vector3.zero;
 
     void Start()
     {
@@ -21,25 +22,52 @@ public class TankControls : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButton("Horizontal"))
+        anim.SetFloat("h", Input.GetAxis("Horizontal"));
+        if (Input.GetButtonDown("Horizontal"))
         {
-            rotationX = transform.localEulerAngles.y + Input.GetAxis("Horizontal") * sensitivityX;
-            transform.localEulerAngles = new Vector3(0, rotationX, 0);
-            transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
+            
+            if (Input.GetKey(KeyCode.A))
+            {
+                //anim.SetTrigger("Turn");
+                anim.SetBool("Turn", true);
+                
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                //anim.SetTrigger("Turn");
+                anim.SetBool("Turn", true);
 
+            }
+            else
+            {
+                anim.SetBool("Turn", false);
+                anim.SetFloat("h", 0);
+            }
+            //else
+            //{
+            //    anim.SetBool("Turn", false);
+
+            //}
         }
-        else if (Input.GetAxis("Mouse X") > 0.1 || Input.GetAxis("Mouse X") < -0.1)
-            transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX , 0);
+        //if (Input.GetButton("Horizontal") && Input.GetAxis("Vertical") > 0)
+        //{
+        //    rotationX = transform.localEulerAngles.y + Input.GetAxis("Horizontal") * sensitivityX;
+        //    transform.localEulerAngles = new Vector3(0, rotationX, 0);
+        //    transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
+        //}
+        //else if (Input.GetAxis("Mouse X") > 0.1 || Input.GetAxis("Mouse X") < -0.1)
+        //    transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
 
-        transform.Translate(0f, 0f, walkingSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+        //transform.Translate(0f, 0f, walkingSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
 
-        if (Input.GetButtonDown("Vertical") && Input.GetButtonDown("Fire3"))
+        anim.SetFloat("v", Input.GetAxis("Vertical"));
+        if (Input.GetButton("Fire3") && Input.GetButton("Vertical"))
         {
-            anim.SetBool("Running",true);
+            anim.SetBool("Running", true);
         }
-        else if (Input.GetButtonDown("Vertical"))
-        {
+        else
             anim.SetBool("Running", false);
+<<<<<<< Updated upstream
             anim.SetFloat("CasualWalk", Input.GetAxis("Vertical"));
         }
 
@@ -73,5 +101,8 @@ public class TankControls : MonoBehaviour
 
 
 
+=======
+        direction = Vector3.zero;
+>>>>>>> Stashed changes
     }
 }
