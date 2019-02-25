@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class SaveSystem
 {
-    public static void SavePlayer(TankControls player)
+    public static void SavePlayer(CharMove player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/playerdata.fun";

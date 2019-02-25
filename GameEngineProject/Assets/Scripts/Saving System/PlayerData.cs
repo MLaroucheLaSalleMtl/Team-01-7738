@@ -9,7 +9,7 @@ public class PlayerData
     public float[] position;
     public int health;
 
-    public PlayerData(TankControls player)
+    public PlayerData(CharMove player)
     {
         //health = player.health;
         position = new float[3];
