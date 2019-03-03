@@ -6,6 +6,7 @@ public class MoveCameraPosition : MonoBehaviour
 {
     private Camera camera;
 
+    [SerializeField] private int delay;
     [SerializeField] private GameObject cameraNewPosition;
 
     private void Start()
@@ -17,8 +18,21 @@ public class MoveCameraPosition : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            camera.transform.position = cameraNewPosition.transform.position;
-            camera.transform.rotation = cameraNewPosition.transform.rotation;
+            if (delay != 0)
+            {
+                Invoke("DelayTransform", delay);
+            }
+            else
+            {
+                camera.transform.position = cameraNewPosition.transform.position;
+                camera.transform.rotation = cameraNewPosition.transform.rotation;
+            }
         }
+    }
+
+    private void DelayTranform()
+    {
+        camera.transform.position = cameraNewPosition.transform.position;
+        camera.transform.rotation = cameraNewPosition.transform.rotation;
     }
 }
