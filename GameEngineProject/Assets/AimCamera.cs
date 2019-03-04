@@ -5,25 +5,34 @@ using UnityEngine;
 public class AimCamera : MonoBehaviour
 {
     private Camera camera;
-    private Transform previousCameraPosition;
-    private MoveCameraPosition moveCameraScript;
+    private Vector3 previousCameraPosition;
+    private Vector3 previousCameraRotation;
 
     void Start()
     {
         camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        previousCameraPosition.position = moveCameraScript.CameraNewPosition.transform.position;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire2"))
+
+        if (Input.GetButtonDown("Fire2"))
         {
-            camera.transform.position = transform.position;
+            camera.enabled = false;
+            gameObject.GetComponent<Camera>().enabled = true;
+            //previousCameraPosition = camera.transform.position;
+            //previousCameraRotation = camera.transform.rotation.eulerAngles;
+            //camera.transform.position = transform.position;
+            //camera.transform.rotation = transform.rotation;
         }
-        else if (Input.GetButtonUp("Fire2"))
+        else if (Input.GetButtonUp("Fire2") || Input.GetButtonUp("Vertical"))
         {
-            camera.transform.position = previousCameraPosition.position;
+            gameObject.GetComponent<Camera>().enabled = false;
+            camera.enabled = true;
+            //camera.transform.position = previousCameraPosition;
+            //camera.transform.rotation = Quaternion.Euler(previousCameraRotation);
         }
     }
 }

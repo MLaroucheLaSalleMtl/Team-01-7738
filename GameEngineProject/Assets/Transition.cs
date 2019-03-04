@@ -8,47 +8,39 @@ public class Transition : MonoBehaviour
     [SerializeField] Transform targetNode;
     [SerializeField] Animator animator;
 
+    void Update()
+    {
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            player.position = targetNode.position;
+            TeleportToNewPosition();
+            interactText.text = "Prees 'E' To open door";
+            if (Input.GetButton("Interact"))
+            {
+                Debug.Log("Inside and pressing E");
+                animator.SetBool("FadeIn/Out", true);
+            }
         }
     }
 
+    void TeleportToNewPosition()
+    {
+        player.position = new Vector3(0,0,0);
+        //targetNode.position;
+        animator.SetBool("FadeIn/Out", false);
+        Debug.Log("TELEPORTED");
+    }
 
-    //void Update()
-    //{
-    //}
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        interactText.text = "Prees 'E' To open door";
-    //        if (Input.GetButtonDown("Fire1"))
-    //        {
-    //            animator.SetBool("FadeIn/Out", true);
-    //            TeleportToNewPosition();
-    //        }        
-    //    }
-    //}
-
-    //void TeleportToNewPosition()
-    //{
-    //    player.position = new Vector3(player.position.x + 10, player.position.y, player.position.z);
-    //        //targetNode.position;
-    //    animator.SetBool("FadeIn/Out", false);
-    //    Debug.Log("ISIDE AND INTERACTING");
-    //}
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        interactText.text = string.Empty;
-    //    }
-    //}
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            interactText.text = string.Empty;
+        }
+    }
 }
 

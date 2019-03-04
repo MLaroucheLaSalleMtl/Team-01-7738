@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveCameraPosition : MonoBehaviour
 {
-    private Camera camera;
+    private GameObject camera;
 
     [SerializeField] private int delay;
     [SerializeField] private GameObject cameraNewPosition;
@@ -13,7 +13,7 @@ public class MoveCameraPosition : MonoBehaviour
 
     private void Start()
     {
-        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        camera = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
     private void OnTriggerEnter(Collider other)
