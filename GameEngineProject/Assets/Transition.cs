@@ -3,13 +3,22 @@ using UnityEngine.UI;
 
 public class Transition : MonoBehaviour
 {
-    [SerializeField] Text interactText;
-    [SerializeField] Transform player;
-    [SerializeField] Transform targetNode;
-    [SerializeField] Animator animator;
+    private Vector3 playersPosition;
+
+    [SerializeField] private Text interactText;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Transform targetNode;
+    [SerializeField] private Animator animator;
+
+    bool inPosition = false;
 
     void Update()
     {
+        if (Input.GetButtonDown("Interact") && inPosition)
+        {
+            TeleportToNewPosition();
+            animator.SetBool("FadeIn/Out", true);
+        }
 
     }
 
@@ -17,22 +26,16 @@ public class Transition : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            TeleportToNewPosition();
             interactText.text = "Prees 'E' To open door";
-            if (Input.GetButton("Interact"))
-            {
-                Debug.Log("Inside and pressing E");
-                animator.SetBool("FadeIn/Out", true);
-            }
+            inPosition = true;
         }
     }
 
+
     void TeleportToNewPosition()
     {
-        player.position = new Vector3(0,0,0);
-        //targetNode.position;
+        player.transform.position = targetNode.position;
         animator.SetBool("FadeIn/Out", false);
-        Debug.Log("TELEPORTED");
     }
 
     private void OnTriggerExit(Collider other)
@@ -40,6 +43,7 @@ public class Transition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interactText.text = string.Empty;
+            inPosition = false;
         }
     }
 }
