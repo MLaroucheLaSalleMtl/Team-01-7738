@@ -9,6 +9,8 @@ public class MoveCameraPosition : MonoBehaviour
     [SerializeField] private int delay;
     [SerializeField] private GameObject cameraNewPosition;
 
+    public GameObject CameraNewPosition { get => cameraNewPosition; set => cameraNewPosition = value; }
+
     private void Start()
     {
         camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -24,15 +26,15 @@ public class MoveCameraPosition : MonoBehaviour
             }
             else
             {
-                camera.transform.position = cameraNewPosition.transform.position;
-                camera.transform.rotation = cameraNewPosition.transform.rotation;
+                camera.transform.position = CameraNewPosition.transform.position;
+                camera.transform.rotation = CameraNewPosition.transform.rotation;
             }
         }
     }
 
     private void DelayTranform()
     {
-        camera.transform.position = cameraNewPosition.transform.position;
-        camera.transform.rotation = cameraNewPosition.transform.rotation;
+        camera.transform.position = CameraNewPosition.transform.position;
+        camera.transform.rotation = CameraNewPosition.transform.rotation;
     }
 }

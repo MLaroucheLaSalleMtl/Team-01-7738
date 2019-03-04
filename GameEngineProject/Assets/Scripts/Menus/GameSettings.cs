@@ -61,7 +61,7 @@ public class GameSettings : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        //PlayerPrefs.SetInt("resolutionIndex", resolutionIndex);
+        PlayerPrefs.SetInt("resolutionIndex", resolutionIndex);
     }
 
     public void FullScreen()
@@ -78,7 +78,8 @@ public class GameSettings : MonoBehaviour
 
         List<string> options = new List<string>();
 
-        int currentResolutionIdex = 0; //PlayerPrefs.GetInt("resolutionIndex", 0);
+        int currentResolutionIndex = 0;
+        //int currentResolutionIndex = PlayerPrefs.GetInt("resolutionIndex", 0);
 
         for (int i = 0; i < resolutions.Length; i++)
         {
@@ -86,11 +87,11 @@ public class GameSettings : MonoBehaviour
             options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
-                currentResolutionIdex = i;
+                currentResolutionIndex = i;
         }
 
         dropdownResolution.AddOptions(options);
-        dropdownResolution.value = currentResolutionIdex;
+        dropdownResolution.value = PlayerPrefs.GetInt("resolutionIndex", currentResolutionIndex);
         dropdownResolution.RefreshShownValue();
     }
 }
