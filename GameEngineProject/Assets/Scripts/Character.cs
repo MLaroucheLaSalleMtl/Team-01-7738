@@ -5,6 +5,9 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     [SerializeField] private int health = 100;
+
+    //[SerializeField] Inventory inventory;
+    //[SerializeField] EquipmentPanel equipmentPanel;
     
     public void TakeDamage(int damageTaken)
     {
@@ -15,6 +18,11 @@ public class Character : MonoBehaviour
     }
 
     void GameOver()
+    {
+        
+    }
+
+    private void Awake()
     {
         
     }

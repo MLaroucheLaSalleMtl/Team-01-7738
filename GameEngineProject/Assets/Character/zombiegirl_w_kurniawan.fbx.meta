@@ -142,7 +142,12 @@ ModelImporter:
     13700000: ZombieGirl_Body
     13700002: ZombieGirl_Pants
     13700004: ZombieGirl_Top
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZombieGirl_Material
+    second: {fileID: 2100000, guid: 32208dca27b41714f8ac634d1c9b4cac, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -175,7 +180,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
