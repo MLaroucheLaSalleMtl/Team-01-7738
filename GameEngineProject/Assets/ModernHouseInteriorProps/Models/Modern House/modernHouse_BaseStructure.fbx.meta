@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: 184b5857472a9ec4dbe7900a4635f0db
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: backDoor
+    100002: basementAirVent
+    100004: basementFiberglassInsulation
+    100006: basementGeo
+    100008: basementGroup
+    100010: basementInsolationPaper
+    100012: basementRoomGlass
+    100014: basementStructure
+    100016: basementWindowSeal
+    100018: bathroomCeiling
+    100020: bathroomFloor
+    100022: bathroomGroup
+    100024: bathroomShower
+    100026: bathroomTrim
+    100028: bedroomWalls
+    100030: frontDoor
+    100032: frontDoorWindowFrames
+    100034: garageGroup
+    100036: garageRoom
+    100038: garageRoomStairs
+    100040: halfBathroomCeiling
+    100042: halfBathroomFloor
+    100044: halfBathroomRoomGroup
+    100046: halfBathroomTrim
+    100048: halfBathroomWalls
+    100050: kidsBedroomCeiling
+    100052: kidsBedroomCeiling 1
+    100054: kidsBedroomGlass
+    100056: kidsBedroomGlass 1
+    100058: kidsBedroomGroup
+    100060: kidsBedroomGroup1
+    100062: kidsBedroomTrim
+    100064: kidsBedroomTrim 1
+    100066: kidsBedroomWall
+    100068: kidsBedroomWall 1
+    100070: kidsBedroomWindowFrame
+    100072: kidsBedroomWindowFrame 1
+    100074: kidsRoomFloor
+    100076: kidsRoomFloor 1
+    100078: mainBedroomFloor
+    100080: mainFireplace
+    100082: mainRoomCeiling
+    100084: mainRoomFireplaceBlocker
+    100086: mainRoomGlass
+    100088: mainRoomGroup
+    100090: mainRoomStairRailing
+    100092: mainRoomTrim
+    100094: mainRoomWalls
+    100096: masterBedroomCeiling
+    100098: masterBedroomGlass
+    100100: masterBedroomGroup
+    100102: masterBedroomTrim
+    100104: masterBedroomWalls
+    100106: masterBedroomWindowFrame
+    100108: mH_Collider
+    100110: mH_woodFloor
+    100112: //RootNode
+    100114: officeCeiling
+    100116: officeFloor
+    100118: officeRoomGlass
+    100120: officeRoomGroup
+    100122: officeRoomWalls
+    100124: officeTrim
+    100126: officeWindowFrame
+    100128: roundedHalfWindowFrame
+    100130: singleWindowframe
+    100132: stairs
+    100134: storageClosetCeiling
+    100136: storageClosetCeiling 1
+    100138: storageClosetFloor
+    100140: storageClosetFloor 1
+    100142: storageClosetGroup1
+    100144: storageClosetGroup2
+    100146: storageClosetTrim
+    100148: storageClosetTrim 1
+    100150: storageClosetWalls
+    100152: storageClosetWalls 1
+    100154: visitingRoomDoubleWindowFrame
+    400000: backDoor
+    400002: basementAirVent
+    400004: basementFiberglassInsulation
+    400006: basementGeo
+    400008: basementGroup
+    400010: basementInsolationPaper
+    400012: basementRoomGlass
+    400014: basementStructure
+    400016: basementWindowSeal
+    400018: bathroomCeiling
+    400020: bathroomFloor
+    400022: bathroomGroup
+    400024: bathroomShower
+    400026: bathroomTrim
+    400028: bedroomWalls
+    400030: frontDoor
+    400032: frontDoorWindowFrames
+    400034: garageGroup
+    400036: garageRoom
+    400038: garageRoomStairs
+    400040: halfBathroomCeiling
+    400042: halfBathroomFloor
+    400044: halfBathroomRoomGroup
+    400046: halfBathroomTrim
+    400048: halfBathroomWalls
+    400050: kidsBedroomCeiling
+    400052: kidsBedroomCeiling 1
+    400054: kidsBedroomGlass
+    400056: kidsBedroomGlass 1
+    400058: kidsBedroomGroup
+    400060: kidsBedroomGroup1
+    400062: kidsBedroomTrim
+    400064: kidsBedroomTrim 1
+    400066: kidsBedroomWall
+    400068: kidsBedroomWall 1
+    400070: kidsBedroomWindowFrame
+    400072: kidsBedroomWindowFrame 1
+    400074: kidsRoomFloor
+    400076: kidsRoomFloor 1
+    400078: mainBedroomFloor
+    400080: mainFireplace
+    400082: mainRoomCeiling
+    400084: mainRoomFireplaceBlocker
+    400086: mainRoomGlass
+    400088: mainRoomGroup
+    400090: mainRoomStairRailing
+    400092: mainRoomTrim
+    400094: mainRoomWalls
+    400096: masterBedroomCeiling
+    400098: masterBedroomGlass
+    400100: masterBedroomGroup
+    400102: masterBedroomTrim
+    400104: masterBedroomWalls
+    400106: masterBedroomWindowFrame
+    400108: mH_Collider
+    400110: mH_woodFloor
+    400112: //RootNode
+    400114: officeCeiling
+    400116: officeFloor
+    400118: officeRoomGlass
+    400120: officeRoomGroup
+    400122: officeRoomWalls
+    400124: officeTrim
+    400126: officeWindowFrame
+    400128: roundedHalfWindowFrame
+    400130: singleWindowframe
+    400132: stairs
+    400134: storageClosetCeiling
+    400136: storageClosetCeiling 1
+    400138: storageClosetFloor
+    400140: storageClosetFloor 1
+    400142: storageClosetGroup1
+    400144: storageClosetGroup2
+    400146: storageClosetTrim
+    400148: storageClosetTrim 1
+    400150: storageClosetWalls
+    400152: storageClosetWalls 1
+    400154: visitingRoomDoubleWindowFrame
+    2300000: backDoor
+    2300002: basementAirVent
+    2300004: basementFiberglassInsulation
+    2300006: basementGeo
+    2300008: basementInsolationPaper
+    2300010: basementRoomGlass
+    2300012: basementStructure
+    2300014: basementWindowSeal
+    2300016: bathroomCeiling
+    2300018: bathroomFloor
+    2300020: bathroomShower
+    2300022: bathroomTrim
+    2300024: bedroomWalls
+    2300026: frontDoor
+    2300028: frontDoorWindowFrames
+    2300030: garageRoom
+    2300032: garageRoomStairs
+    2300034: halfBathroomCeiling
+    2300036: halfBathroomFloor
+    2300038: halfBathroomTrim
+    2300040: halfBathroomWalls
+    2300042: kidsBedroomCeiling
+    2300044: kidsBedroomCeiling 1
+    2300046: kidsBedroomGlass
+    2300048: kidsBedroomGlass 1
+    2300050: kidsBedroomTrim
+    2300052: kidsBedroomTrim 1
+    2300054: kidsBedroomWall
+    2300056: kidsBedroomWall 1
+    2300058: kidsBedroomWindowFrame
+    2300060: kidsBedroomWindowFrame 1
+    2300062: kidsRoomFloor
+    2300064: kidsRoomFloor 1
+    2300066: mainBedroomFloor
+    2300068: mainFireplace
+    2300070: mainRoomCeiling
+    2300072: mainRoomFireplaceBlocker
+    2300074: mainRoomGlass
+    2300076: mainRoomStairRailing
+    2300078: mainRoomTrim
+    2300080: mainRoomWalls
+    2300082: masterBedroomCeiling
+    2300084: masterBedroomGlass
+    2300086: masterBedroomTrim
+    2300088: masterBedroomWalls
+    2300090: masterBedroomWindowFrame
+    2300092: mH_Collider
+    2300094: mH_woodFloor
+    2300096: officeCeiling
+    2300098: officeFloor
+    2300100: officeRoomGlass
+    2300102: officeRoomWalls
+    2300104: officeTrim
+    2300106: officeWindowFrame
+    2300108: roundedHalfWindowFrame
+    2300110: singleWindowframe
+    2300112: stairs
+    2300114: storageClosetCeiling
+    2300116: storageClosetCeiling 1
+    2300118: storageClosetFloor
+    2300120: storageClosetFloor 1
+    2300122: storageClosetTrim
+    2300124: storageClosetTrim 1
+    2300126: storageClosetWalls
+    2300128: storageClosetWalls 1
+    2300130: visitingRoomDoubleWindowFrame
+    3300000: backDoor
+    3300002: basementAirVent
+    3300004: basementFiberglassInsulation
+    3300006: basementGeo
+    3300008: basementInsolationPaper
+    3300010: basementRoomGlass
+    3300012: basementStructure
+    3300014: basementWindowSeal
+    3300016: bathroomCeiling
+    3300018: bathroomFloor
+    3300020: bathroomShower
+    3300022: bathroomTrim
+    3300024: bedroomWalls
+    3300026: frontDoor
+    3300028: frontDoorWindowFrames
+    3300030: garageRoom
+    3300032: garageRoomStairs
+    3300034: halfBathroomCeiling
+    3300036: halfBathroomFloor
+    3300038: halfBathroomTrim
+    3300040: halfBathroomWalls
+    3300042: kidsBedroomCeiling
+    3300044: kidsBedroomCeiling 1
+    3300046: kidsBedroomGlass
+    3300048: kidsBedroomGlass 1
+    3300050: kidsBedroomTrim
+    3300052: kidsBedroomTrim 1
+    3300054: kidsBedroomWall
+    3300056: kidsBedroomWall 1
+    3300058: kidsBedroomWindowFrame
+    3300060: kidsBedroomWindowFrame 1
+    3300062: kidsRoomFloor
+    3300064: kidsRoomFloor 1
+    3300066: mainBedroomFloor
+    3300068: mainFireplace
+    3300070: mainRoomCeiling
+    3300072: mainRoomFireplaceBlocker
+    3300074: mainRoomGlass
+    3300076: mainRoomStairRailing
+    3300078: mainRoomTrim
+    3300080: mainRoomWalls
+    3300082: masterBedroomCeiling
+    3300084: masterBedroomGlass
+    3300086: masterBedroomTrim
+    3300088: masterBedroomWalls
+    3300090: masterBedroomWindowFrame
+    3300092: mH_Collider
+    3300094: mH_woodFloor
+    3300096: officeCeiling
+    3300098: officeFloor
+    3300100: officeRoomGlass
+    3300102: officeRoomWalls
+    3300104: officeTrim
+    3300106: officeWindowFrame
+    3300108: roundedHalfWindowFrame
+    3300110: singleWindowframe
+    3300112: stairs
+    3300114: storageClosetCeiling
+    3300116: storageClosetCeiling 1
+    3300118: storageClosetFloor
+    3300120: storageClosetFloor 1
+    3300122: storageClosetTrim
+    3300124: storageClosetTrim 1
+    3300126: storageClosetWalls
+    3300128: storageClosetWalls 1
+    3300130: visitingRoomDoubleWindowFrame
+    4300000: kidsBedroomTrim
+    4300002: kidsBedroomWall
+    4300004: kidsRoomFloor
+    4300006: kidsBedroomCeiling
+    4300008: kidsBedroomWindowFrame
+    4300010: kidsBedroomGlass
+    4300012: halfBathroomCeiling
+    4300014: halfBathroomWalls
+    4300016: halfBathroomTrim
+    4300018: halfBathroomFloor
+    4300020: mainRoomTrim
+    4300022: mainRoomWalls
+    4300024: mainRoomStairRailing
+    4300026: singleWindowframe
+    4300028: frontDoorWindowFrames
+    4300030: visitingRoomDoubleWindowFrame
+    4300032: mainRoomGlass
+    4300034: mH_woodFloor
+    4300036: roundedHalfWindowFrame
+    4300038: frontDoor
+    4300040: stairs
+    4300042: mainRoomFireplaceBlocker
+    4300044: mainRoomCeiling
+    4300046: backDoor
+    4300048: mainFireplace
+    4300050: basementFiberglassInsulation
+    4300052: basementInsolationPaper
+    4300054: basementAirVent
+    4300056: basementRoomGlass
+    4300058: basementStructure
+    4300060: basementGeo
+    4300062: basementWindowSeal
+    4300064: officeCeiling
+    4300066: officeRoomWalls
+    4300068: officeTrim
+    4300070: officeFloor
+    4300072: officeWindowFrame
+    4300074: officeRoomGlass
+    4300076: masterBedroomWalls
+    4300078: mainBedroomFloor
+    4300080: masterBedroomTrim
+    4300082: masterBedroomWindowFrame
+    4300084: masterBedroomCeiling
+    4300086: masterBedroomGlass
+    4300088: bathroomTrim
+    4300090: bedroomWalls
+    4300092: bathroomFloor
+    4300094: bathroomCeiling
+    4300096: bathroomShower
+    4300098: storageClosetFloor
+    4300100: storageClosetWalls
+    4300102: storageClosetTrim
+    4300104: storageClosetCeiling
+    4300106: storageClosetFloor
+    4300108: storageClosetWalls
+    4300110: storageClosetCeiling
+    4300112: storageClosetTrim
+    4300114: kidsBedroomTrim
+    4300116: kidsBedroomWall
+    4300118: kidsRoomFloor
+    4300120: kidsBedroomCeiling
+    4300122: kidsBedroomWindowFrame
+    4300124: kidsBedroomGlass
+    4300126: garageRoom
+    4300128: garageRoomStairs
+    4300130: mH_Collider
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 1d7c40e9187a25c4bb4030be6e7b7a40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_AirVent_Mat
+    second: {fileID: 2100000, guid: fe84fde070148fc4cade06ca1704317a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_BackDoor_Mat02
+    second: {fileID: 2100000, guid: 7c47003348547344f94e856b43836d36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_BackDoor_Mat1
+    second: {fileID: 2100000, guid: ff5be8ed39a3cfc48a0c19a6a5559287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_BathroomShowerWall_Mat
+    second: {fileID: 2100000, guid: 9650ae39b3a8b704b922b00fa77d1faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_CeilingPaint01_Mat
+    second: {fileID: 2100000, guid: 9f38354cafadd0446b23c5adc9d179e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Cement01_Mat
+    second: {fileID: 2100000, guid: bf8f49624937e3f4e8e4da77bdd20a97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Cement02_Mat
+    second: {fileID: 2100000, guid: 88f95e99671eafb4c91e83b716c49ac9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Collider_Mat
+    second: {fileID: 2100000, guid: 5766f49c02a732b40b71810260e0cacf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_DoubleWindowFrame_Mat
+    second: {fileID: 2100000, guid: 7855508d13f53e94ebfe68217403fefb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Fiberglass_Mat
+    second: {fileID: 2100000, guid: 2dec0bf6ca810134485ab64870c17296, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FineWood_Mat
+    second: {fileID: 2100000, guid: 65108559af851a843bd7be778786e789, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FireplaceBrick_Mat
+    second: {fileID: 2100000, guid: d980bde7766aee847a23772621207bae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FireplaceCement_Mat
+    second: {fileID: 2100000, guid: fbf3fb689e724c248998904ac5cdaaf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FireplaceFrame_Mat
+    second: {fileID: 2100000, guid: fb5f712c1346ecc45bb248156943d400, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FireplaceVent_Mat
+    second: {fileID: 2100000, guid: 532eacb3e4f70e0489e7bd2b61e6e3b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Floor_BathroomTile_Mat
+    second: {fileID: 2100000, guid: 5b1fccb5dd8198d49bb0c748a3c81821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Floor_Carpet
+    second: {fileID: 2100000, guid: 64ce91bbc77ffaa46b7c4b48d278d4a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Floor_Trim_Mat
+    second: {fileID: 2100000, guid: 9cd669295ec860a489a34a25e03960ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Floor_WoodTile_Mat
+    second: {fileID: 2100000, guid: ec17a464ef38aee4596d5033e8506c59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FrontDoor_Mat
+    second: {fileID: 2100000, guid: a0db7bd56be32084990460d231e39708, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FrontDoor_Mat02
+    second: {fileID: 2100000, guid: d89a18ed873fb624c9003aa9a5723d03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_FrontDoor_Mat03
+    second: {fileID: 2100000, guid: cc4955acd3cda5a4d9629c6bf6c0e15a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_InsulationPaper_Mat
+    second: {fileID: 2100000, guid: f6657d234d9a22f41806f8674c7242b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_SingleWindowFrame_Mat
+    second: {fileID: 2100000, guid: d56cb9462fd858041ab462694a46b633, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_SmallWindowFrames_Mat
+    second: {fileID: 2100000, guid: 1370608c03f4b814cbb9538619cfc287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WallPaint01_Mat
+    second: {fileID: 2100000, guid: 3a5e13dadb9e3a2438a049a9ecfc7151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WallPaint02_Mat
+    second: {fileID: 2100000, guid: 8fd4810f7f8f72c4d909ceb651056340, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WallPaint03_Mat
+    second: {fileID: 2100000, guid: 7cfae9cad9fd12f4791970281c08702a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WallPaint04_Mat
+    second: {fileID: 2100000, guid: 7616a7a19ab717a42992187a985af63e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WindowGlass_Mat
+    second: {fileID: 2100000, guid: 7f4aca9e935e2ad4dbe0309565f07cf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WindowSeal_Mat
+    second: {fileID: 2100000, guid: cdc8537bbc2c8034e9c24df607c018e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WindowSeal_Mat02
+    second: {fileID: 2100000, guid: d79984a829d28c74daf4a9591a4df304, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WindowSeal_Mat03
+    second: {fileID: 2100000, guid: 75436e841bfe0c0439e67ff774dbbf62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_Wood01_Mat
+    second: {fileID: 2100000, guid: 495c6d68d23e94642a6a580a1c676b05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mH_WoodStairRailing_Mat
+    second: {fileID: 2100000, guid: 89f25e3920a356547b9b3f4f0bdbad72, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
