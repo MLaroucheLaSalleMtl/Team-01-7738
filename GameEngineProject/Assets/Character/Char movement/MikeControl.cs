@@ -22,6 +22,15 @@ public class MikeControl : MonoBehaviour
 
     void Update()
     {
+            if (Input.GetButton("Fire2"))
+            {
+                anim.SetBool("Aim", true);
+                anim.SetFloat("h", 0f);
+                anim.SetFloat("v", 0f);
+                
+        }
+            else
+                anim.SetBool("Aim", false);
         if (controller.isGrounded)
         {
             // We are grounded, so recalculate
@@ -30,21 +39,25 @@ public class MikeControl : MonoBehaviour
             anim.SetFloat("v", Input.GetAxis("Vertical"));
             anim.SetFloat("h", Input.GetAxis("Horizontal"));
 
-            if (Input.GetKeyDown("a") && !Input.GetButton("Vertical"))
+
+            if (Input.GetKeyDown("a") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
             {
                 anim.SetTrigger("LeftT");
             }
-            if (Input.GetKeyDown("d") && !Input.GetButton("Vertical"))
+            if (Input.GetKeyDown("d") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
             {
                 anim.SetTrigger("RightT");
             }
 
             if (Input.GetButton("Fire3") && Input.GetButton("Vertical"))
             {
+                speed = 4.75f;
                 anim.SetBool("Running", true);
             }
             else
+            {
                 anim.SetBool("Running", false);
+            }
 
             moveDirection = Vector3.zero;
             moveDirection.z = Input.GetAxis("Vertical");
