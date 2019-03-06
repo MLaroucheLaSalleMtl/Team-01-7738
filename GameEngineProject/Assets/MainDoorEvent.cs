@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainDoorEvent : MonoBehaviour
 {
+
+    private AsyncOperation async;
     private EventSystem eventSystemCode;
 
     private bool inPosition;
@@ -18,8 +21,11 @@ public class MainDoorEvent : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && inPosition && !isDisplayingText)
         {
-            if (eventSystemCode.HasMainKey)
+            if (EventSystem.Keys[1])
             {
+                Scene currentScene = SceneManager.GetActiveScene();
+                async = SceneManager.LoadSceneAsync(currentScene.buildIndex + 1);
+                async.allowSceneActivation = true;
 
             }
             else
@@ -27,7 +33,6 @@ public class MainDoorEvent : MonoBehaviour
                 StartCoroutine(DisplayText("You need to find the Key"));
             }
         }
-
     }
 
     void OnTriggerEnter(Collider other)

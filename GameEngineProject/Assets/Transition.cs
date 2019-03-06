@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class Transition : MonoBehaviour
 {
     private bool isDisplayingText;
-    private bool hasKey = false;
 
     [SerializeField] private bool usesKey;
 
@@ -20,13 +19,17 @@ public class Transition : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && inPosition)
         {
-            if (hasKey)
+            if (EventSystem.Keys[0])
             {
                 StartCoroutine(TeleportToNewPosition());
             }
-            else
+            else if (usesKey)
             {
                 StartCoroutine(DisplayText("Door is Locked"));
+            }
+            else
+            {
+                StartCoroutine(TeleportToNewPosition());
             }
         }
 
@@ -46,7 +49,6 @@ public class Transition : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                hasKey = true;
                 inPosition = true;
                 StartCoroutine(DisplayText("Prees 'E' To open door"));
             }

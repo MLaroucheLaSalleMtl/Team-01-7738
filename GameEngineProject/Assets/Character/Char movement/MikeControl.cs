@@ -56,7 +56,7 @@ public class MikeControl : MonoBehaviour
             }
             else
             {
-                speed = 2f;
+                speed = 2.0f;
                 anim.SetBool("Running", false);
             }
 

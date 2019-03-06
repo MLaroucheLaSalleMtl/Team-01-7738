@@ -10,7 +10,7 @@ public class AimCamera : MonoBehaviour
 
     void Start()
     {
-        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
        
     }
 
@@ -27,7 +27,7 @@ public class AimCamera : MonoBehaviour
             //camera.transform.position = transform.position;
             //camera.transform.rotation = transform.rotation;
         }
-        else if (Input.GetButtonUp("Fire2") || Input.GetButtonUp("Vertical"))
+        else if (Input.GetButtonUp("Fire2"))
         {
             gameObject.GetComponent<Camera>().enabled = false;
             camera.enabled = true;

@@ -199,8 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 7615748}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &49249826
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,9 +727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7062be10d6b7cc046afe658a7fa5de83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivityX: 4
-  walkingSpeed: 2
-  anim: {fileID: 0}
 --- !u!4 &268494217
 Transform:
   m_ObjectHideFlags: 0
@@ -962,29 +957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fe353920d75424db030d4c4b81ce7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: a5a189195054e56479c41b3a44d5e195, type: 2}
-  - {fileID: 11400000, guid: a5a189195054e56479c41b3a44d5e195, type: 2}
-  itemsParent: {fileID: 694581674}
-  itemSlots:
-  - {fileID: 486047521}
-  - {fileID: 1766921833}
-  - {fileID: 1353006225}
-  - {fileID: 2059063484}
-  - {fileID: 593532838}
-  - {fileID: 983566177}
-  - {fileID: 1879576958}
-  - {fileID: 405408785}
-  - {fileID: 1449414082}
-  - {fileID: 367868669}
-  - {fileID: 541201214}
-  - {fileID: 7615750}
-  - {fileID: 985483257}
-  - {fileID: 455389553}
-  - {fileID: 407237151}
-  - {fileID: 1457906830}
-  - {fileID: 384460394}
-  - {fileID: 575805151}
 --- !u!1 &287300586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,8 +1229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 367868667}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &373868185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,8 +1466,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 384460392}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &405408781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,8 +1553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 405408783}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &407237147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,8 +1640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 407237149}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &413054766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,8 +1818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 455389551}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &461314308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,9 +1868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 461314311}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 1
 --- !u!114 &461314311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,8 +2083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 486047519}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &505014400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,9 +2224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 518776757}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &518776757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2513,8 +2467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 541201212}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &549487201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,9 +2517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 549487204}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 7
 --- !u!114 &549487204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2692,8 +2641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 575805149}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &577579104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,8 +2819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 593532836}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &625964787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,9 +2869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 625964790}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 6
 --- !u!114 &625964790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3014,9 +2956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 630736750}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 5
 --- !u!114 &630736750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3353,9 +3292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 744260722}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 4
 --- !u!114 &744260722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3807,9 +3743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 767676537}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &767676537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4631,8 +4564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 983566175}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &985483253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,8 +4651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 985483255}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &1035164758
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,9 +4763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c4fb89a6e61c446b1a3f81acc95d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: {fileID: 299857268}
-  ItemEffect: {fileID: 1822513956}
-  ItemDescribtion: {fileID: 1845660304}
 --- !u!1 &1057037365
 GameObject:
   m_ObjectHideFlags: 0
@@ -5813,9 +5739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1300996356}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &1300996356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5940,8 +5863,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1353006223}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &1359774301
 GameObject:
   m_ObjectHideFlags: 0
@@ -6093,14 +6014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dcaecee0c01c5a4c8cf647e81cdaa9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equipmentLotsParent: {fileID: 1363094306}
-  EquipmentSlots:
-  - {fileID: 625964789}
-  - {fileID: 1743621819}
-  - {fileID: 549487203}
-  - {fileID: 744260721}
-  - {fileID: 630736749}
-  - {fileID: 461314310}
 --- !u!1 &1369817867
 GameObject:
   m_ObjectHideFlags: 0
@@ -6521,8 +6434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1449414080}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &1457906826
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,8 +6521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1457906828}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &1460272811
 GameObject:
   m_ObjectHideFlags: 0
@@ -7343,8 +7252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acfd2ab84aac6b442ad4a792f905f1f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 279713567}
-  equipmentPanel: {fileID: 1363094307}
 --- !u!1 &1638695931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7759,9 +7666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1710520231}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &1710520231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7986,9 +7890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1729495376}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &1729495376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8167,9 +8068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1743621820}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &1743621820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8294,8 +8192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1766921831}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &1805703860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8977,8 +8873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1879576956}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &1883371843
 GameObject:
   m_ObjectHideFlags: 0
@@ -9291,9 +9185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e4dbf7bdeb811498fd9ce43528bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1909988167}
-  tooltip: {fileID: 1035164763}
-  EquipmentType: 0
 --- !u!114 &1909988167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9741,8 +9632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba43d2abe57b324382409c2a86a8190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 2059063482}
-  tooltip: {fileID: 1035164763}
 --- !u!1 &2088868769
 GameObject:
   m_ObjectHideFlags: 0
