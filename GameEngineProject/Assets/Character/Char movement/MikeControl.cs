@@ -22,15 +22,15 @@ public class MikeControl : MonoBehaviour
 
     void Update()
     {
-            if (Input.GetButton("Fire2"))
-            {
-                anim.SetBool("Aim", true);
-                anim.SetFloat("h", 0f);
-                anim.SetFloat("v", 0f);
+        //    if (Input.GetButton("Fire2"))
+        //    {
+        //        anim.SetBool("Aim", true);
+        //        anim.SetFloat("h", 0f);
+        //        anim.SetFloat("v", 0f);
                 
-        }
-            else
-                anim.SetBool("Aim", false);
+        //}
+        //    else
+        //        anim.SetBool("Aim", false);
         if (controller.isGrounded)
         {
             // We are grounded, so recalculate
@@ -40,37 +40,37 @@ public class MikeControl : MonoBehaviour
             anim.SetFloat("h", Input.GetAxis("Horizontal"));
 
 
-            if (Input.GetKeyDown("a") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
-            {
-                anim.SetTrigger("LeftT");
-            }
-            if (Input.GetKeyDown("d") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
-            {
-                anim.SetTrigger("RightT");
-            }
+            //if (Input.GetKeyDown("a") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
+            //{
+            //    anim.SetTrigger("LeftT");
+            //}
+            //if (Input.GetKeyDown("d") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
+            //{
+            //    anim.SetTrigger("RightT");
+            //}
 
-            if (Input.GetButton("Fire3") && Input.GetButton("Vertical"))
-            {
-                speed = 4.75f;
-                anim.SetBool("Running", true);
-            }
-            else
-            {
-                speed = 2.0f;
-                anim.SetBool("Running", false);
-            }
+            //if (Input.GetButton("Fire3") && Input.GetButton("Vertical"))
+            //{
+            //    speed = 4.75f;
+            //    anim.SetBool("Running", true);
+            //}
+            //else
+            //{
+            //    speed = 2.0f;
+            //    anim.SetBool("Running", false);
+            //}
 
             moveDirection = Vector3.zero;
             moveDirection.z = Input.GetAxis("Vertical");
-            //moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            transform.Rotate(0, Input.GetAxis("Horizontal") * 4, 0);
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            //transform.Rotate(0, Input.GetAxis("Horizontal") * 4, 0);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
 
-            if (Input.GetButton("Jump"))
-            {
-                moveDirection.y = jumpSpeed;
-            }
+            //if (Input.GetButton("Jump"))
+            //{
+            //    moveDirection.y = jumpSpeed;
+            //}
         }
 
         // Apply gravity

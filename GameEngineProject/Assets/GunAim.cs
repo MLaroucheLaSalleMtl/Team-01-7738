@@ -31,17 +31,17 @@ public class GunAim : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (Input.GetButton("Fire2"))
-        {
-            anim.SetBool("Aim", true);
-            mikeCode.enabled = false;
-            chest.LookAt(target.position);
-            chest.rotation = chest.rotation * Quaternion.Euler(offset);
-        }
-        else
-        {
-            anim.SetBool("Aim", false);
-            mikeCode.enabled = true;
-        }
+        //if (Input.GetButton("Fire2"))
+        //{
+        //    anim.SetBool("Aim", true);
+        //    mikeCode.enabled = false;
+        //    chest.LookAt(target.position);
+        //    chest.rotation = chest.rotation * Quaternion.Euler(offset);
+        //}
+        //else
+        //{
+        //    anim.SetBool("Aim", false);
+        //    mikeCode.enabled = true;
+        //}
     }
 }
