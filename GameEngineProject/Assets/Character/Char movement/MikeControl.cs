@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MikeControl : MonoBehaviour
 {
-    public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 20.0f;
+    [SerializeField] private float speed = 6.0f;
+    [SerializeField] private float jumpSpeed = 8.0f;
+    [SerializeField] private float gravity = 20.0f;
+    [SerializeField] private float rotationSpeed = 2f;
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
@@ -16,8 +17,6 @@ public class MikeControl : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        // let the gameObject fall down
-        //gameObject.transform.position = new Vector3(0, 5, 0);
     }
 
     void Update()
@@ -62,8 +61,7 @@ public class MikeControl : MonoBehaviour
 
             moveDirection = Vector3.zero;
             moveDirection.z = Input.GetAxis("Vertical");
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            //transform.Rotate(0, Input.GetAxis("Horizontal") * 4, 0);
+            transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
 
