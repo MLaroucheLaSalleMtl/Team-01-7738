@@ -2,28 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class TestMovement : MonoBehaviour
 {
-    [SerializeField] private int health = 100;
+    public Transform camPivot;
+    float heading = 0;
+    public Transform cam;
+    Vector2 input;
 
-    //[SerializeField] Inventory inventory;
-    //[SerializeField] EquipmentPanel equipmentPanel;
-    
-    public void TakeDamage(int damageTaken)
+
+    void Update()
     {
-        health -= damageTaken;
+        heading += Input.GetAxis("Mouse X") * Time.deltaTime * 180;
+        camPivot.rotation = Quaternion.Euler(0, heading, 0);
 
-        if (health <= 0)
-            GameOver();
-    }
+        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        input = Vector2.ClampMagnitude(input, 1);
 
-    void GameOver()
-    {
-        
-    }
+        Vector3 camF = cam.forward;
+        Vector3 camR = cam.right;
 
-    private void Awake()
-    {
-        
+        camF.y = 0;
+        camR.y = 0;
+        camF = camF.normalized;
+        camR = camF.normalized;
+
+
+        // transform.position += new Vector3(input.x, 0, input.y) * Time.deltaTime * 5; 
+
+        transform.position += (camF * input.y + 0 * camR * input.x) * Time.deltaTime * 5;
+
     }
-}
+} 
+
