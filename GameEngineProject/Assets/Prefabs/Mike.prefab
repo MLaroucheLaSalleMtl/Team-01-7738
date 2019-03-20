@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70994296}
   - component: {fileID: 70994297}
+  - component: {fileID: 5732923668663052666}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -146,6 +147,18 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &5732923668663052666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70994295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08d70ec6a9f1ca4787467464adb0d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74551239
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +961,7 @@ Animator:
   m_GameObject: {fileID: 444310332}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 961bb3fc7d217bc4d99d077d0c008fc2, type: 3}
-  m_Controller: {fileID: 9100000, guid: ba6cc033621699a4a83feaec7737f19a, type: 2}
+  m_Controller: {fileID: 9100000, guid: b5d4bce19c500d546a0de0c3ef0b2cd1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -990,6 +1003,7 @@ MonoBehaviour:
   speed: 2
   jumpSpeed: 8
   gravity: 20
+  rotationSpeed: 2
 --- !u!114 &449211061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,15 +3061,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a9e6356a015e2cf4995024ddbb67059f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78e6b46dd51bdf44cbb1be0c99c59778, type: 3}
---- !u!4 &700547088 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400008, guid: 78e6b46dd51bdf44cbb1be0c99c59778,
-    type: 3}
-  m_PrefabInstance: {fileID: 700947096}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &700849200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: 78e6b46dd51bdf44cbb1be0c99c59778,
+    type: 3}
+  m_PrefabInstance: {fileID: 700947096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &700547088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400008, guid: 78e6b46dd51bdf44cbb1be0c99c59778,
     type: 3}
   m_PrefabInstance: {fileID: 700947096}
   m_PrefabAsset: {fileID: 0}

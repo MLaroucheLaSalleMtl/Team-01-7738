@@ -16,7 +16,7 @@ public class LoadingMenu : MonoBehaviour
     [SerializeField] private int sceneToLoad = -1;
 
     [SerializeField] private Image progressBar;
-    //[SerializeField] private Text interacText;
+    [SerializeField] private Text loadingText;
 
     // Use this for initialization
     void Start()
@@ -42,8 +42,8 @@ public class LoadingMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (async.progress >= 0.89)
-            interacText.enabled = true;*/
+        if (async.progress >= 0.89)
+            loadingText.text = "PreSs anY kEy to conTinue";
 
         if (waitForInput && Input.anyKey)
             if (async.progress >= 0.89 && SplashScreen.isFinished)
