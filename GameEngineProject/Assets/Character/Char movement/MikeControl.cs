@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class MikeControl : MonoBehaviour
 {
-    [SerializeField] private float speed = 6.0f;
-    [SerializeField] private float jumpSpeed = 8.0f;
+    [SerializeField] private float speed = 2.0f;
     [SerializeField] private float gravity = 20.0f;
-    [SerializeField] private float rotationSpeed = 2f;
+    [SerializeField] private float rotationSpeed = 1f;
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private Animator anim;
+
+    //IK animation
+    [SerializeField] private float weightPosition;
+    [SerializeField] private float weightRotation;
+    //[SerializeField] private float weightLook;
+    //[SerializeField] private float weightBody;
+    //[SerializeField] private float weightHead;
+    //[SerializeField] private float weightEyes;
+    //[SerializeField] private float weightClamp;
+    [SerializeField] private Transform myTarget;
 
     void Start()
     {
@@ -19,56 +28,71 @@ public class MikeControl : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    private void OnAnimatorIK()
     {
-        //    if (Input.GetButton("Fire2"))
-        //    {
-        //        anim.SetBool("Aim", true);
-        //        anim.SetFloat("h", 0f);
-        //        anim.SetFloat("v", 0f);
-                
+        anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weightPosition);
+        anim.SetIKPosition(AvatarIKGoal.RightHand, myTarget.position);
+        anim.SetIKRotationWeight(AvatarIKGoal.RightHand, weightRotation);
+        anim.SetIKRotation(AvatarIKGoal.RightHand, myTarget.rotation);
+        anim.SetLookAtPosition(myTarget.position);
+        //if (Input.GetButton("Fire2"))
+        //{
+        ////anim.SetLookAtWeight(weightLook, weightBody, weightHead, weightEyes, weightClamp);
         //}
-        //    else
-        //        anim.SetBool("Aim", false);
+    }
+
+        void Update()
+    {
+        
+        if (Input.GetButton("Fire2"))
+        { 
+            anim.SetBool("Aim", true);
+            anim.SetFloat("h", 1f);
+            anim.SetFloat("v", 0.25f);
+        }
+        else
+            anim.SetBool("Aim", false);
         if (controller.isGrounded)
         {
             // We are grounded, so recalculate
             // move direction directly from axes
 
-            anim.SetFloat("v", Input.GetAxis("Vertical"));
             anim.SetFloat("h", Input.GetAxis("Horizontal"));
 
+            if (Input.GetButton("Fire3") && Input.GetButton("Vertical"))
+            {
+                speed = 4f;
+                anim.SetFloat("v", Input.GetAxis("Vertical"));
+            }
+            else
+            {
+                anim.SetFloat("v", Input.GetAxis("Vertical") * 0.5f);
+                speed = 2f;
+            }
 
-            //if (Input.GetKeyDown("a") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
-            //{
-            //    anim.SetTrigger("LeftT");
-            //}
-            //if (Input.GetKeyDown("d") && !Input.GetButton("Vertical") && !Input.GetButton("Fire2"))
-            //{
-            //    anim.SetTrigger("RightT");
-            //}
-
-            //if (Input.GetButton("Fire3") && Input.GetButton("Vertical"))
-            //{
-            //    speed = 4.75f;
-            //    anim.SetBool("Running", true);
-            //}
-            //else
-            //{
-            //    speed = 2.0f;
-            //    anim.SetBool("Running", false);
-            //}
+            if (Input.GetAxis("Horizontal") < 0 && !Input.GetButton("Vertical"))
+            {
+                rotationSpeed = 1f;
+            }
+            else if (Input.GetAxis("Horizontal") > 0 && !Input.GetButton("Vertical"))
+            {
+                rotationSpeed = 1f;
+            }
+            else
+                rotationSpeed = 2f;
 
             moveDirection = Vector3.zero;
             moveDirection.z = Input.GetAxis("Vertical");
-            transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
+            if (anim.GetBool("Aim"))
+            {
+                transform.position = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            }
+            else
+            {
+                transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0); 
+            }
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
-
-            //if (Input.GetButton("Jump"))
-            //{
-            //    moveDirection.y = jumpSpeed;
-            //}
         }
 
         // Apply gravity

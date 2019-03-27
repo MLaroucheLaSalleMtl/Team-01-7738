@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
-    public Transform target;
+    [SerializeField] private Transform target;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class LookAt : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-       // transform.LookAt(target);
+        transform.LookAt(target);
     }
 }
