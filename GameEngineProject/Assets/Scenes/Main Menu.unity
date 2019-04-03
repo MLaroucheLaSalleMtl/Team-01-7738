@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -273,9 +273,9 @@ GameObject:
   m_Component:
   - component: {fileID: 82597989}
   - component: {fileID: 82597993}
-  - component: {fileID: 82597992}
   - component: {fileID: 82597991}
   - component: {fileID: 82597990}
+  - component: {fileID: 82597992}
   m_Layer: 5
   m_Name: Options Btn
   m_TagString: Untagged
@@ -493,9 +493,9 @@ GameObject:
   m_Component:
   - component: {fileID: 159292442}
   - component: {fileID: 159292446}
-  - component: {fileID: 159292445}
   - component: {fileID: 159292444}
   - component: {fileID: 159292443}
+  - component: {fileID: 159292445}
   m_Layer: 5
   m_Name: Continue Btn
   m_TagString: Untagged
@@ -786,6 +786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 264973994}
   - component: {fileID: 264973995}
+  - component: {fileID: 264973996}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -861,6 +862,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!114 &264973996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264973993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ad17bcee0c2a49a31725ef5bb80fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &286610262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,9 +1062,9 @@ GameObject:
   m_Component:
   - component: {fileID: 436161286}
   - component: {fileID: 436161290}
-  - component: {fileID: 436161289}
   - component: {fileID: 436161288}
   - component: {fileID: 436161287}
+  - component: {fileID: 436161289}
   m_Layer: 5
   m_Name: Back Btn
   m_TagString: Untagged
@@ -1458,6 +1471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 503176050}
   - component: {fileID: 503176051}
+  - component: {fileID: 503176052}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -1533,6 +1547,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!114 &503176052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503176049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ad17bcee0c2a49a31725ef5bb80fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &548604721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1645,7 @@ GameObject:
   - component: {fileID: 556028224}
   - component: {fileID: 556028223}
   - component: {fileID: 556028222}
+  - component: {fileID: 556028225}
   m_Layer: 5
   m_Name: Quality Dropdown
   m_TagString: Untagged
@@ -1756,6 +1783,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556028220}
   m_CullTransparentMesh: 0
+--- !u!114 &556028225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556028220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ad17bcee0c2a49a31725ef5bb80fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &609079503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,8 +1804,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 609079504}
-  - component: {fileID: 609079506}
   - component: {fileID: 609079505}
+  - component: {fileID: 609079506}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -2545,6 +2584,7 @@ GameObject:
   - component: {fileID: 963212926}
   - component: {fileID: 963212925}
   - component: {fileID: 963212924}
+  - component: {fileID: 963212927}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -2656,6 +2696,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963212922}
   m_CullTransparentMesh: 0
+--- !u!114 &963212927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963212922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ad17bcee0c2a49a31725ef5bb80fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1009980949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,9 +2866,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1069709470}
   - component: {fileID: 1069709474}
-  - component: {fileID: 1069709473}
   - component: {fileID: 1069709472}
   - component: {fileID: 1069709471}
+  - component: {fileID: 1069709473}
   m_Layer: 5
   m_Name: New Game Btn
   m_TagString: Untagged
@@ -3471,9 +3523,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1362100696}
   - component: {fileID: 1362100700}
-  - component: {fileID: 1362100699}
   - component: {fileID: 1362100698}
   - component: {fileID: 1362100697}
+  - component: {fileID: 1362100699}
   m_Layer: 5
   m_Name: Quit Btn
   m_TagString: Untagged
@@ -3767,6 +3819,7 @@ GameObject:
   - component: {fileID: 1417319531}
   - component: {fileID: 1417319530}
   - component: {fileID: 1417319529}
+  - component: {fileID: 1417319532}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -3878,6 +3931,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417319527}
   m_CullTransparentMesh: 0
+--- !u!114 &1417319532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417319527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ad17bcee0c2a49a31725ef5bb80fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1422714028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4695,6 +4760,7 @@ GameObject:
   - component: {fileID: 1874367039}
   - component: {fileID: 1874367038}
   - component: {fileID: 1874367037}
+  - component: {fileID: 1874367040}
   m_Layer: 5
   m_Name: Resolution Dropdown
   m_TagString: Untagged
@@ -4817,6 +4883,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874367035}
   m_CullTransparentMesh: 0
+--- !u!114 &1874367040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874367035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ad17bcee0c2a49a31725ef5bb80fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1891837624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,8 +5052,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1948105264}
-  - component: {fileID: 1948105266}
   - component: {fileID: 1948105265}
+  - component: {fileID: 1948105266}
   m_Layer: 5
   m_Name: Audio Toggle
   m_TagString: Untagged
@@ -5081,8 +5159,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995627224}
-  - component: {fileID: 1995627226}
   - component: {fileID: 1995627225}
+  - component: {fileID: 1995627226}
   m_Layer: 5
   m_Name: Music Volume Slider
   m_TagString: Untagged
@@ -5382,8 +5460,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102587869}
-  - component: {fileID: 2102587871}
   - component: {fileID: 2102587870}
+  - component: {fileID: 2102587871}
   m_Layer: 5
   m_Name: SoundEffects Volume Slider
   m_TagString: Untagged

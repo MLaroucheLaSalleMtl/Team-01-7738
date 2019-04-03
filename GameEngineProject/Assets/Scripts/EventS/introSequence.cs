@@ -8,6 +8,7 @@ public class introSequence : MonoBehaviour
 {
     private int index;
     private MikeControl mikeCode;
+    private bool introFinish = false;
 
     [SerializeField] private float typingSpeed = 0.2f;
 
@@ -21,7 +22,7 @@ public class introSequence : MonoBehaviour
         mikeCode.enabled = false;
         dialogueText.text = string.Empty;
         fadeAnimator.SetBool("FadeIn/Out", true);
-        StartCoroutine(IntroDialogue());
+        Invoke("AnimatorIsFinished", 20f);
     }
 
     void Update()
@@ -60,5 +61,7 @@ public class introSequence : MonoBehaviour
             mikeCode.enabled = true;
         }
     }
+
+    void AnimatorIsFinished() { StartCoroutine(IntroDialogue()); }
 
 }

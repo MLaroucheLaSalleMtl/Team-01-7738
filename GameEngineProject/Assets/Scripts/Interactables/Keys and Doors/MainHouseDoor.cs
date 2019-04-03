@@ -11,13 +11,23 @@ public class MainHouseDoor : Doors
     protected override void Interact()
     {
         if (key.KeyPickedUp)
-            OpenMainDoor();
+        {
+            StartCoroutine(DisplayText(interactedText));
+            Invoke("SecondInteract", 3f);
+           
+        }
         else
             StartCoroutine(DisplayText("You neEd to fiNd the KEy"));
     }
 
+    protected override void SecondInteract()
+    {
+        OpenMainDoor();
+    }
+
     void OpenMainDoor()
     {
+        animator.SetBool("FadeIn/Out", true);
         Scene currentScene = SceneManager.GetActiveScene();
         async = SceneManager.LoadSceneAsync(currentScene.buildIndex + 1);
         async.allowSceneActivation = true;

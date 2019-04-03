@@ -7,6 +7,7 @@ public class Interactables : MonoBehaviour
 {
     private bool inPosition;
     private bool isDisplayingText;
+    protected bool interactedOnce;
 
     protected MikeControl mikeControlCode;
     private IEnumerator displayTextCoroutine;
@@ -22,9 +23,13 @@ public class Interactables : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact") && inPosition && !isDisplayingText)
+        if (Input.GetButtonDown("Interact") && inPosition && !isDisplayingText && !interactedOnce)
         {
             Interact();
+        }
+        else if (Input.GetButtonDown("Interact") && interactedOnce)
+        {
+            SecondInteract();
         }
     }
 
@@ -59,17 +64,23 @@ public class Interactables : MonoBehaviour
             yield return new WaitForSeconds(0.005f);
         }
 
-        if (Input.GetButtonDown("Interact"))
-        {
-            isDisplayingText = false;
-            mikeControlCode.enabled = true; 
-            StartCoroutine(displayTextCoroutine);
-        }
+        isDisplayingText = false;
     }
 
     protected virtual void Interact()
     {
         mikeControlCode.enabled = false;
-        StartCoroutine(DisplayText(interactedText));
+        displayTextCoroutine = DisplayText(interactedText);
+        StartCoroutine(displayTextCoroutine);
+        interactedOnce = true;     
+    }
+
+    protected virtual void SecondInteract()
+    {
+        interactedOnce = false;
+        mikeControlCode.enabled = true;
+        interactText.text = string.Empty;
+        displayTextCoroutine = DisplayText(enterText);
+        StartCoroutine(displayTextCoroutine);
     }
 }
