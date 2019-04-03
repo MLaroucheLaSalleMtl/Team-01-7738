@@ -12,8 +12,20 @@ public class MikeControl : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
+<<<<<<< Updated upstream
     public float Speed { get => speed; set => speed = value; }
     public Vector3 MoveDirection { get => moveDirection; set => moveDirection = value; }
+=======
+    //IK animation
+    [SerializeField] private float weightPosition;
+    [SerializeField] private float weightRotation;
+    [SerializeField] private float weightLook;
+    [SerializeField] private float weightBody;
+    [SerializeField] private float weightHead;
+    [SerializeField] private float weightEyes;
+    [SerializeField] private float weightClamp;
+    [SerializeField] private Transform myTarget;
+>>>>>>> Stashed changes
 
     void Start()
     {
@@ -28,23 +40,16 @@ public class MikeControl : MonoBehaviour
         anim.SetIKRotationWeight(AvatarIKGoal.RightHand, weightRotation);
         anim.SetIKRotation(AvatarIKGoal.RightHand, myTarget.rotation);
         anim.SetLookAtPosition(myTarget.position);
-        //if (Input.GetButton("Fire2"))
-        //{
-        ////anim.SetLookAtWeight(weightLook, weightBody, weightHead, weightEyes, weightClamp);
-        //}
+        if (Input.GetButton("Fire2"))
+        {
+            anim.SetLookAtWeight(weightLook, weightBody, weightHead, weightEyes, weightClamp);
+        }
     }
 
-        void Update()
+    void Update()
     {
-        
-        if (Input.GetButton("Fire2"))
-        { 
-            anim.SetBool("Aim", true);
-            anim.SetFloat("h", 1f);
-            anim.SetFloat("v", 0.25f);
-        }
-        else
-            anim.SetBool("Aim", false);
+
+
         if (controller.isGrounded)
         {
             // We are grounded, so recalculate
@@ -76,13 +81,22 @@ public class MikeControl : MonoBehaviour
 
             moveDirection = Vector3.zero;
             moveDirection.z = Input.GetAxis("Vertical");
+            if (Input.GetButton("Fire2"))
+            {
+                anim.SetBool("Aim", true);
+                //anim.SetFloat("h", 1f);
+                //anim.SetFloat("v", 0.25f);
+            }
+            else
+                anim.SetBool("Aim", false);
+
             if (anim.GetBool("Aim"))
             {
-                transform.position = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+                transform.position = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
             }
             else
             {
-                transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0); 
+                transform.Rotate(0f, Input.GetAxis("Horizontal") * rotationSpeed, 0f);
             }
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
