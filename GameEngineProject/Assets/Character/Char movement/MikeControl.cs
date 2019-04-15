@@ -12,6 +12,7 @@ public class MikeControl : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
+
     public float Speed { get => speed; set => speed = value; }
     public Vector3 MoveDirection { get => moveDirection; set => moveDirection = value; }
 
@@ -24,6 +25,7 @@ public class MikeControl : MonoBehaviour
     [SerializeField] private float weightEyes;
     [SerializeField] private float weightClamp;
     [SerializeField] private Transform myTarget;
+
 
     void Start()
     {
