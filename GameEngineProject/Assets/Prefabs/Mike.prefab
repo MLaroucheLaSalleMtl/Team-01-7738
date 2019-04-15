@@ -949,6 +949,7 @@ Transform:
   - {fileID: 1400199438}
   - {fileID: 391966413}
   - {fileID: 28083927}
+  - {fileID: 3707968017901707261}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -982,7 +983,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.85
   m_Radius: 0.4
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -1006,6 +1007,11 @@ MonoBehaviour:
   rotationSpeed: 2
   weightPosition: 0
   weightRotation: 0
+  weightLook: 2
+  weightBody: 2
+  weightHead: 2
+  weightEyes: 2
+  weightClamp: 2
   myTarget: {fileID: 0}
 --- !u!114 &449211061
 MonoBehaviour:
@@ -1034,6 +1040,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5d0e0c80d8acc46b0781e1eccb4232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOccupied: 000000000000
+  items:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  panels:
+  - {fileID: 0}
+  - {fileID: 0}
+  defaultOptions:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!81 &354442115
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2909,19 +2929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e488bbcb72fbf4947bab79d1ae3546f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1319906177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3707968017901707250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77cd9bfb039d85a43b746f3c23a0bf2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 28083927}
 --- !u!114 &1059327432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2982,6 +2989,19 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1319906177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707968017901707250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77cd9bfb039d85a43b746f3c23a0bf2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 28083927}
 --- !u!1001 &402064041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3070,6 +3090,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472498431}
     m_Modifications:
+    - target: {fileID: 100008, guid: 78e6b46dd51bdf44cbb1be0c99c59778, type: 3}
+      propertyPath: m_Name
+      value: flashlight
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 78e6b46dd51bdf44cbb1be0c99c59778, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1055
@@ -3126,10 +3150,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0010000004
       objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: 78e6b46dd51bdf44cbb1be0c99c59778, type: 3}
-      propertyPath: m_Name
-      value: flashlight
-      objectReference: {fileID: 0}
     - target: {fileID: 2300008, guid: 78e6b46dd51bdf44cbb1be0c99c59778, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3144,15 +3164,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a9e6356a015e2cf4995024ddbb67059f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78e6b46dd51bdf44cbb1be0c99c59778, type: 3}
---- !u!4 &700547088 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400008, guid: 78e6b46dd51bdf44cbb1be0c99c59778,
-    type: 3}
-  m_PrefabInstance: {fileID: 700947096}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &700849200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: 78e6b46dd51bdf44cbb1be0c99c59778,
+    type: 3}
+  m_PrefabInstance: {fileID: 700947096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &700547088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400008, guid: 78e6b46dd51bdf44cbb1be0c99c59778,
     type: 3}
   m_PrefabInstance: {fileID: 700947096}
   m_PrefabAsset: {fileID: 0}

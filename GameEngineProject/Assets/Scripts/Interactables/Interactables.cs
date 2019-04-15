@@ -27,7 +27,7 @@ public class Interactables : MonoBehaviour
         {
             Interact();
         }
-        else if (Input.GetButtonDown("Interact") && interactedOnce)
+        else if (Input.GetButtonDown("Interact") && interactedOnce && !isDisplayingText)
         {
             SecondInteract();
         }

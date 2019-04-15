@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private bool[] isOccupied;
+    [SerializeField] private GameObject[] slots;
     [SerializeField] private GameObject[] items;
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
 
     public bool[] IsOccupied { get => isOccupied; set => isOccupied = value; }
-    public GameObject[] Items { get => items; set => items = value; }
+    public GameObject[] Slots { get => slots; set => slots = value; }
 
     void Start()
     {
@@ -29,5 +30,10 @@ public class Inventory : MonoBehaviour
             if (position == i)
                 defaultOptions[i].Select();
         }
+    }
+
+     void OnGUI()
+    {
+        
     }
 }

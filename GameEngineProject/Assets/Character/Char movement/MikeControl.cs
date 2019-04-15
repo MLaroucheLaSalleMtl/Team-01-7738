@@ -12,10 +12,9 @@ public class MikeControl : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
-<<<<<<< Updated upstream
     public float Speed { get => speed; set => speed = value; }
     public Vector3 MoveDirection { get => moveDirection; set => moveDirection = value; }
-=======
+
     //IK animation
     [SerializeField] private float weightPosition;
     [SerializeField] private float weightRotation;
@@ -25,7 +24,6 @@ public class MikeControl : MonoBehaviour
     [SerializeField] private float weightEyes;
     [SerializeField] private float weightClamp;
     [SerializeField] private Transform myTarget;
->>>>>>> Stashed changes
 
     void Start()
     {

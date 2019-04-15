@@ -8,7 +8,7 @@ public class Keys : PickupItem
 
     public bool KeyPickedUp { get => keyPickedUp; set => keyPickedUp = value; }
 
-    protected override void InteractPickUp()
+    protected override void SecondInteract()
     {
         StartCoroutine(DisplayText(interactedText));
         keyPickedUp = true;

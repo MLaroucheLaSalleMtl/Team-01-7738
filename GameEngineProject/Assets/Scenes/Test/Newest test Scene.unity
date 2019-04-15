@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -384,46 +384,6 @@ PrefabInstance:
     - target: {fileID: 444310333, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310335, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: m_Center.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310335, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: m_Height
-      value: 1.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: rotationSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightPosition
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightRotation
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightLook
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightBody
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightHead
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightEyes
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 444310334, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
-      propertyPath: weightClamp
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}

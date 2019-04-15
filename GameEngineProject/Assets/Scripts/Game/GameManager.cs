@@ -15,16 +15,16 @@ public class GameManager : MonoBehaviour
     {
         PanelToggle(0);
     }
-
+                                                        
     void Update()
     {
-        if (Input.GetButton("Cancel"))
+        if (Input.GetButtonDown("Cancel"))
         {
             isGamePaused = !isGamePaused;
             Pause(isGamePaused);
         }
 
-        if (Input.GetButton("Inventory"))
+        if (Input.GetButtonDown("Inventory"))
         {
             isInventory = !isInventory;
 

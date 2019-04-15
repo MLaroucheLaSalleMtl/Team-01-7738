@@ -5,8 +5,10 @@ using UnityEngine;
 public class PickupItem : Interactables
 {
     protected Inventory inventoryScript;
+    private InventoryItem item;
 
     [SerializeField] protected GameObject itemButton;
+    [SerializeField] protected InventoryItem itemButtonn;
 
     void Start()
     {
@@ -15,16 +17,20 @@ public class PickupItem : Interactables
 
     protected override void Interact()
     {
-        for (int i = 0; i < inventoryScript.Items.Length; i++)
+        for (int i = 0; i < inventoryScript.Slots.Length; i++)
         {
+            Debug.Log(i);
+            Debug.Log(inventoryScript.IsOccupied[i].ToString());
             if (inventoryScript.IsOccupied[i] == false)
             {
                 AddItemToInventory(i);
-                InteractPickUp();
+                SecondInteract();
+                Debug.Log(inventoryScript.IsOccupied[i].ToString());
                 break;
             }
             else
             {
+                Debug.Log(inventoryScript.IsOccupied[i].ToString());
                 StartCoroutine(DisplayText("InveNtory FuLl"));
             }
         }
@@ -32,12 +38,9 @@ public class PickupItem : Interactables
 
     void AddItemToInventory(int index)
     {
-        Instantiate(itemButton, inventoryScript.Items[index].transform, false);
+        Instantiate(itemButton, inventoryScript.Slots[index].transform, false);
         inventoryScript.IsOccupied[index] = true;
     }
 
-    protected virtual void InteractPickUp()
-    {
-
-    }
+    protected override void SecondInteract() { }
 }
