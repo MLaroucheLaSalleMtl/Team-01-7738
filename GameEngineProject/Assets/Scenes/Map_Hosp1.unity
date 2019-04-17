@@ -5345,7 +5345,7 @@ Transform:
   m_Children:
   - {fileID: 1861400969}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -88.700005, y: 0, z: 0}
 --- !u!1 &20956195
 GameObject:
@@ -7489,7 +7489,7 @@ RectTransform:
   - {fileID: 737261860}
   - {fileID: 1098585511}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9523,7 +9523,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1450507726}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -11111,7 +11111,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1863127243}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -11266,7 +11266,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &122783977
 GameObject:
@@ -12878,7 +12878,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+=======
   m_Father: {fileID: 780270463}
+>>>>>>> master
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -14831,7 +14835,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 733399580}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -16795,7 +16799,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &221670437
 GameObject:
@@ -16923,7 +16927,11 @@ Transform:
   - {fileID: 364679967}
   - {fileID: 2049242151}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 12
+=======
   m_RootOrder: 10
+>>>>>>> master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223708771
 GameObject:
@@ -21506,7 +21514,7 @@ Transform:
   - {fileID: 1564688099}
   - {fileID: 2114089039}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &311974524
 PrefabInstance:
@@ -27483,7 +27491,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 857741802}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -41548,7 +41556,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1654056384}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -42177,7 +42185,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1649029302}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -42946,7 +42954,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 195790699}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -46733,7 +46741,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1611064387}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -49421,7 +49429,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 436974052}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -60787,7 +60795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088574843
 GameObject:
@@ -61401,8 +61409,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1120332045}
+<<<<<<< HEAD
+=======
   - {fileID: 1744881855}
   - {fileID: 780270463}
+>>>>>>> master
   - {fileID: 1442282043}
   m_Father: {fileID: 66711892}
   m_RootOrder: 5
@@ -61425,15 +61436,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+>>>>>>> master
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+<<<<<<< HEAD
+  m_Sprite: {fileID: 21300000, guid: c505eb7bcefa1ec4aac7539633b71da3, type: 3}
+  m_Type: 0
+=======
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
+>>>>>>> master
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -64711,7 +64731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1166371195
 GameObject:
@@ -65308,7 +65328,7 @@ Transform:
   - {fileID: 1247845460}
   - {fileID: 1216795093}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1183214424 stripped
 Transform:
@@ -65625,7 +65645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!1 &1194821442
 GameObject:
@@ -66863,7 +66883,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1247845460}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -68879,7 +68899,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1216795093}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -70810,12 +70830,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6493b4442b3f424e8d8cab1dd33e8d7, type: 3}
---- !u!1 &1278153300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 444310332, guid: c6493b4442b3f424e8d8cab1dd33e8d7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1278153299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1278153306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444310333, guid: c6493b4442b3f424e8d8cab1dd33e8d7,
@@ -71014,7 +71028,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281406881
 GameObject:
@@ -76485,7 +76499,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1531681839}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -77742,7 +77756,11 @@ RectTransform:
   m_Children:
   - {fileID: 186199930}
   m_Father: {fileID: 1098585511}
+<<<<<<< HEAD
+  m_RootOrder: 1
+=======
   m_RootOrder: 3
+>>>>>>> master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -78688,7 +78706,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 92599731}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -80713,7 +80731,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 3
+=======
   m_RootOrder: 1
+>>>>>>> master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1479709603
 GameObject:
@@ -82837,7 +82859,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 1413451054}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -83517,7 +83539,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400126, guid: bbdc0d0176aefa2449f6c1e74f4882d8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 4
+=======
       value: 2
+>>>>>>> master
       objectReference: {fileID: 0}
     - target: {fileID: 400126, guid: bbdc0d0176aefa2449f6c1e74f4882d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -84530,7 +84556,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1278153299}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278153300}
+  m_GameObject: {fileID: 270662795}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f5d0e0c80d8acc46b0781e1eccb4232, type: 3}
@@ -86379,7 +86405,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 809726996}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -88370,7 +88396,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 728920398}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -88809,7 +88835,7 @@ MonoBehaviour:
   usesKey: 0
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 710830056}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -99731,7 +99757,7 @@ MonoBehaviour:
   usesKey: 1
   key: {fileID: 0}
   animator: {fileID: 1169150308}
-  player: {fileID: 1278153300}
+  player: {fileID: 0}
   targetNode: {fileID: 118653251}
   openDoor: {fileID: 0}
   unlockDoor: {fileID: 0}
@@ -102066,7 +102092,7 @@ Transform:
   - {fileID: 491489529}
   - {fileID: 1100009977}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905910942
 GameObject:
@@ -108928,13 +108954,13 @@ Transform:
   - {fileID: 192538146}
   - {fileID: 1818372787}
   - {fileID: 1043549813}
+  - {fileID: 870319680}
   - {fileID: 449589614}
   - {fileID: 620593872}
-  - {fileID: 181942275}
-  - {fileID: 870319680}
-  - {fileID: 740264240}
-  - {fileID: 436675376}
   - {fileID: 852499825}
+  - {fileID: 181942275}
+  - {fileID: 436675376}
+  - {fileID: 740264240}
   - {fileID: 2007511759}
   - {fileID: 1963275418}
   m_Father: {fileID: 223061081}
