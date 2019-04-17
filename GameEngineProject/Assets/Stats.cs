@@ -31,13 +31,8 @@ public class Stats : MonoBehaviour
         
     }
 
-    public IEnumerator TakeDamage(int damageTaken)
+    public void TakeDamage(int damageTaken)
     {
-        playerAudioSource.PlayOneShot(playerHurtSounds[Random.Range(0, playerHurtSounds.Length)]);
         health -= damageTaken;
-
-        damageEffect.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        damageEffect.SetActive(false);
     }
 }
