@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private AsyncOperation async;
 
     private bool isGameOver = false;
     private bool isGamePaused;
     private bool isInventory;
-
-
 
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
@@ -75,6 +75,24 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    public void GameOver()
+    {
+        isGameOver = true;
+        Time.timeScale = 0f;
+
+        PanelToggle(4);
+    }
+
+    public void Restart()
+    {
+        if (async == null)
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            async = SceneManager.LoadSceneAsync(currentScene.buildIndex - 1);
+            async.allowSceneActivation = true;
+        }
+    }
+
     public void PanelToggle(int position)
     {
         Input.ResetInputAxes();
@@ -88,10 +106,4 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Die()
-    {
-        isGameOver = true;
-        Time.timeScale = 0f;
-
-    }
 }

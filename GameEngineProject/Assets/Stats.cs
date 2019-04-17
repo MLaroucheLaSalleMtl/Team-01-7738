@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class Stats : MonoBehaviour
 {
-
-
     [SerializeField] private float health = 100f;
 
     [SerializeField] private GameObject[] guns;
@@ -16,23 +14,20 @@ public class Stats : MonoBehaviour
     private AudioSource playerAudioSource;
     private GameManager gameManager;
 
-
     // Start is called before the first frame update
     void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         playerAudioSource = GetComponent<AudioSource>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void TakeDamage(int damageTaken)
     {
         health -= damageTaken;
+
+        if (health <= 0)
+        {
+            gameManager.GameOver();
+        }
     }
 }
