@@ -31,7 +31,8 @@ public class Doors : Interactables
                 if (openFirstTime)
                 {
                     audioSource.PlayOneShot(unlockDoor);
-                    StartCoroutine(DisplayText("DooR UNlOcked"));
+                    StartCoroutine(DisplayText(interactedText));
+                    key.InventoryScript.Slots[key.Index].transform.GetComponentInChildren<InventoryItem>().IsUsed = true;
                     openFirstTime = false;
                 }
                 else

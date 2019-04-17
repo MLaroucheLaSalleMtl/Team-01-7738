@@ -4,56 +4,74 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventoryItem : MonoBehaviour, ISelectHandler, IDeselectHandler
+public class InventoryItem : MonoBehaviour, IDeselectHandler
 {
+
+    private bool isUsed = false;
     private Inventory inventory;
     private PickupItem item;
     private Text descriptionText;
     private GameObject deleteButton;
     private Transform deleteButtonPosition;
-    private int index;
 
     [SerializeField] private string itemDescription;
 
-    //public int Index { get => index; set => index = value; }
-
-    public InventoryItem(int index)
-    {
-        this.index = index;
-    }
+    public bool IsUsed { get => isUsed; set => isUsed = value; }
 
     void Start()
     {
         inventory = GameObject.FindObjectOfType<Inventory>();
         descriptionText = GameObject.FindGameObjectWithTag("ItemDescriptionTag").GetComponent<Text>();
-        deleteButtonPosition = GameObject.FindGameObjectWithTag("DeleteButton").transform;
-        deleteButton = transform.GetChild(0).gameObject;
+        deleteButtonPosition = GameObject.FindGameObjectWithTag("DeleteButtonPosition").transform;
+        deleteButton = transform.parent.GetChild(1).gameObject;
 
         deleteButton.transform.position = new Vector2(deleteButtonPosition.position.x, deleteButtonPosition.position.y);
         deleteButton.SetActive(false);
-
-        Debug.Log(index);
     }
 
     public void Examine()
     {
         descriptionText.text = itemDescription;
+        this.deleteButton.SetActive(true);
+
+        GameObject[] deleteButtons;
+        deleteButtons = GameObject.FindGameObjectsWithTag("DeleteButton");
+
+        Debug.Log(deleteButtons.Length);
+
+        for (int i = 0; i < deleteButtons.Length; i++)
+        {
+            Debug.Log(i);
+            if (deleteButtons[i] == this.deleteButton)
+            {
+                Debug.Log("i:" + i + "delete button: " + this.deleteButton.name);
+                if (isUsed)
+                {
+                    Debug.Log("is Used");
+                    this.deleteButton.SetActive(true);
+                }
+                else
+                {
+                    deleteButtons[i].SetActive(false);
+                }
+            }
+            else
+            {
+                deleteButtons[i].SetActive(false);
+                Debug.Log("Set active false");
+            }
+        }
     }
 
     public void Discard()
     {
-        //inventory.IsOccupied[index] = false;
-        Destroy(gameObject);
-    }
-
-    public void OnSelect(BaseEventData eventData)
-    {
-        deleteButton.SetActive(true);
+        descriptionText.text = string.Empty;
+        transform.parent.transform.parent.GetComponent<Slot>().IsEmpty = true;
+        Destroy(transform.parent.gameObject);
     }
 
     public void OnDeselect(BaseEventData eventData)
     {
-        deleteButton.SetActive(false);
+        descriptionText.text = string.Empty;
     }
-
 }

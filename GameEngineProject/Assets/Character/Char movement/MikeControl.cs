@@ -96,7 +96,7 @@ public class MikeControl : MonoBehaviour
             }
             else
             {
-                transform.Rotate(0f, Input.GetAxis("Horizontal") * rotationSpeed, 0f);
+                transform.Rotate(0f, Input.GetAxis("Horizontal") * 5, 0f);
             }
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;

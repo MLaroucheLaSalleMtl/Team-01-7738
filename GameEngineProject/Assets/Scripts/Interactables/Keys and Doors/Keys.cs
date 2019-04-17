@@ -12,14 +12,13 @@ public class Keys : PickupItem
     {
         StartCoroutine(DisplayText(interactedText));
         keyPickedUp = true;
-        GetComponent<BoxCollider>().enabled = false;
         GetComponent<MeshRenderer>().enabled = false;
+        transform.position = new Vector3(0, 0, 0);
         Invoke("DestroyObject", 1f);
     }
 
     void DestroyObject()
     {
-        interactText.text = string.Empty;
-        Destroy(gameObject);
+        interactText.text = string.Empty;       
     }
 }

@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PickupItem : Interactables
 {
+    private int index;
+
     protected Inventory inventoryScript;
     private InventoryItem item;
 
-    [SerializeField] protected GameObject itemButton;
-    [SerializeField] protected InventoryItem itemButtonn;
+    [SerializeField] private GameObject itemButton;
+
+    public int Index { get => index; set => index = value; }
+    public Inventory InventoryScript { get => inventoryScript; set => inventoryScript = value; }
 
     void Start()
     {
@@ -19,18 +23,15 @@ public class PickupItem : Interactables
     {
         for (int i = 0; i < inventoryScript.Slots.Length; i++)
         {
-            Debug.Log(i);
-            Debug.Log(inventoryScript.IsOccupied[i].ToString());
-            if (inventoryScript.IsOccupied[i] == false)
+
+            if (inventoryScript.Slots[i].IsEmpty == true)
             {
                 AddItemToInventory(i);
                 SecondInteract();
-                Debug.Log(inventoryScript.IsOccupied[i].ToString());
                 break;
             }
             else
             {
-                Debug.Log(inventoryScript.IsOccupied[i].ToString());
                 StartCoroutine(DisplayText("InveNtory FuLl"));
             }
         }
@@ -38,8 +39,9 @@ public class PickupItem : Interactables
 
     void AddItemToInventory(int index)
     {
+        this.index = index;
         Instantiate(itemButton, inventoryScript.Slots[index].transform, false);
-        inventoryScript.IsOccupied[index] = true;
+        inventoryScript.Slots[index].IsEmpty = false;
     }
 
     protected override void SecondInteract() { }

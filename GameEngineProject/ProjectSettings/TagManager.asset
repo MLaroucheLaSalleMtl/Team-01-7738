@@ -6,8 +6,7 @@ TagManager:
   tags:
   - ItemDescriptionTag
   - DeleteButton
-  tags:
-  - Fire
+  - DeleteButtonPosition
   layers:
   - Default
   - TransparentFX

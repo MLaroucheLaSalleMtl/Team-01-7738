@@ -58,12 +58,12 @@ public class Interactables : MonoBehaviour
         isDisplayingText = true;
 
         interactText.text = string.Empty;
-        foreach (char letter in textToDisplay.ToCharArray())
-        {
-            interactText.text += letter;
-            yield return new WaitForSeconds(0.005f);
-        }
+        yield return new WaitForSeconds(0.0005f);
+        //foreach (char letter in textToDisplay.ToCharArray())
+        //{
+        //}
 
+        interactText.text = textToDisplay;
         isDisplayingText = false;
     }
 

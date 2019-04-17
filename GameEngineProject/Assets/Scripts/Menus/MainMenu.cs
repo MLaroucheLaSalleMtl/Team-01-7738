@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
+    [SerializeField] private Text continueNotAvailable;
 
     void Start()
     {

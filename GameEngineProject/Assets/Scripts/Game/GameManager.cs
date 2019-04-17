@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
             if (isInventory)
             {
-                PanelToggle(2);
+                PanelToggle(3);
             }
             else
             {
