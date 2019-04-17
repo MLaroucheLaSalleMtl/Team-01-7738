@@ -44,5 +44,5 @@ public class PickupItem : Interactables
         inventoryScript.Slots[index].IsEmpty = false;
     }
 
-    protected override void SecondInteract() { }
+    protected override void SecondInteract() { Destroy(gameObject); }
 }
