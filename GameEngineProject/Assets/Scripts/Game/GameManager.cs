@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
+    private bool isGameOver = false;
     private bool isGamePaused;
     private bool isInventory;
+
+
 
     [SerializeField] private GameObject[] panels;
     [SerializeField] private Selectable[] defaultOptions;
@@ -82,5 +86,12 @@ public class GameManager : MonoBehaviour
             if (position == i)
                 defaultOptions[i].Select();
         }
+    }
+
+    public void Die()
+    {
+        isGameOver = true;
+        Time.timeScale = 0f;
+
     }
 }
