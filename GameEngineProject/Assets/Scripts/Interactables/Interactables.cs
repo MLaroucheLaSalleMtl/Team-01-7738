@@ -9,17 +9,11 @@ public class Interactables : MonoBehaviour
     private bool isDisplayingText;
     protected bool interactedOnce;
 
-    protected MikeControl mikeControlCode;
     private IEnumerator displayTextCoroutine;
 
     [SerializeField] protected Text interactText;
     [SerializeField] protected string enterText;
     [SerializeField] protected string interactedText;
-
-    void Start()
-    {
-        mikeControlCode = GameObject.FindObjectOfType<MikeControl>();  
-    }
 
     void Update()
     {
@@ -69,7 +63,6 @@ public class Interactables : MonoBehaviour
 
     protected virtual void Interact()
     {
-        mikeControlCode.enabled = false;
         displayTextCoroutine = DisplayText(interactedText);
         StartCoroutine(displayTextCoroutine);
         interactedOnce = true;     
@@ -78,7 +71,6 @@ public class Interactables : MonoBehaviour
     protected virtual void SecondInteract()
     {
         interactedOnce = false;
-        mikeControlCode.enabled = true;
         interactText.text = string.Empty;
         displayTextCoroutine = DisplayText(enterText);
         StartCoroutine(displayTextCoroutine);

@@ -15,6 +15,7 @@ public class Event1 : MonoBehaviour
     [SerializeField] private bool makesLightFlicker;
     [SerializeField] private bool movesObjects;
     [SerializeField] private bool makeSound;
+    [SerializeField] private bool enableAudioSource;
 
     void Start()
     {
@@ -48,7 +49,11 @@ public class Event1 : MonoBehaviour
             }
             else if (makeSound)
             {
-                audioSource.PlayOneShot(sound);
+                audioSource.PlayOneShot(sound, 0.6f);
+            }
+            else if (enableAudioSource)
+            {
+                GetComponent<AudioSource>().enabled = true;
             }
         }
     }

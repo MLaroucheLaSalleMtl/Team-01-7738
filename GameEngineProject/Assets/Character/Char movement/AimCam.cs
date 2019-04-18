@@ -19,7 +19,7 @@ public class AimCam : MonoBehaviour
         //Vector3 pos = target.transform.position;
         //Quaternion rot = target.transform.rotation;
         Ray ray = cam.ScreenPointToRay(new Vector3(500, 200, 0));
-        target.position = ray.GetPoint(5);
+        //target.position = ray.GetPoint(5);
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
     }
 }

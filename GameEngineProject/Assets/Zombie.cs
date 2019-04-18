@@ -13,6 +13,7 @@ public class Zombie : MonoBehaviour
 
     private bool isAttacking = false;
 
+    private GameManager gameManager;
     private Transform player;
     private NavMeshAgent navMeshAgent;
     private MikeControl playerStats;
@@ -27,6 +28,7 @@ public class Zombie : MonoBehaviour
 
     void Awake()
     {
+        gameManager = GameObject.FindObjectOfType<GameManager>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         colliders = GetComponentsInChildren<Collider>();
@@ -77,19 +79,11 @@ public class Zombie : MonoBehaviour
 
             if (distace <= navMeshAgent.stoppingDistance)
             {
-                if (!isAttacking)
-                {
-                    isAttacking = true;
-                    StartCoroutine(Attack());
-                }
+                gameManager.GameOver();
 
                 FaceTarget();
             }
-            else
-            {
-                isAttacking = false;
-                StopAllCoroutines();
-            }
+
         }
     }
 

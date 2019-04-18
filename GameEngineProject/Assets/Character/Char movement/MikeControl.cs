@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MikeControl : MonoBehaviour
+public class MikeControlOld : MonoBehaviour
 {
     [SerializeField] private float speed = 2.0f;
     [SerializeField] private float gravity = 20.0f;

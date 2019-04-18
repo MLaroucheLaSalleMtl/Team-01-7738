@@ -20,7 +20,7 @@ public class InteractOnOff : Interactables
     {
         interactedOnce = true;
         StartCoroutine(DisplayText(interactedText));
-        mikeControlCode.enabled = false;
+        //mikeControlCode.enabled = false;
     }
     
     void MoveObject()
@@ -53,6 +53,6 @@ public class InteractOnOff : Interactables
         yesButton.SetActive(false);
         noButton.SetActive(false);
 
-        mikeControlCode.enabled = true;
+       // mikeControlCode.enabled = true;
     }
 }

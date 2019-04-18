@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookAt : MonoBehaviour
+public class LookAtOld : MonoBehaviour
 {
     [SerializeField] private Transform target;
     // Start is called before the first frame update
