@@ -48,7 +48,7 @@ public class Event2 : MonoBehaviour
             }
             else if (makeSound)
             {
-                audioSource.PlayOneShot(sound, 0.4f);
+                audioSource.Play();
             }
         }
     }

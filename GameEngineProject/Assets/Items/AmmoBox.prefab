@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 1209653788894434273}
   - component: {fileID: 2934229637103813776}
   - component: {fileID: 2302415350265808809}
+  - component: {fileID: 2315102249554751597}
   m_Layer: 5
   m_Name: BulletCount
   m_TagString: Untagged
@@ -302,6 +303,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 99
+--- !u!114 &2315102249554751597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034002573430473505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698c2ef63ea8e0b48a93f204cc809f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8855231845756821610
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,7 +23,6 @@ public class PickupItem : Interactables
     {
         for (int i = 0; i < inventoryScript.Slots.Length; i++)
         {
-
             if (inventoryScript.Slots[i].IsEmpty == true)
             {
                 AddItemToInventory(i);
@@ -37,7 +36,7 @@ public class PickupItem : Interactables
         }
     }
 
-    void AddItemToInventory(int index)
+    virtual protected void AddItemToInventory(int index)
     {
         this.index = index;
         Instantiate(itemButton, inventoryScript.Slots[index].transform, false);
