@@ -34,10 +34,12 @@ public class GameManager : MonoBehaviour
 
             if (isInventory)
             {
+                Time.timeScale = 0f;
                 PanelToggle(3);
             }
             else
             {
+                Time.timeScale = 1f;
                 PanelToggle(0);
             }
         }

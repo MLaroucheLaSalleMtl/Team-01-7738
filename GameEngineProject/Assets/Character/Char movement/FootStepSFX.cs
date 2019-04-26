@@ -15,10 +15,7 @@ public class FootStepSFX : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "woodFloor")
-        {
-            aud.PlayOneShot(sfx[0]);
-        }
+        aud.PlayOneShot(sfx[Random.Range(0, 2)]);
     }
 
     // Update is called once per frame

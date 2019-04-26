@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7716638268077699048}
   m_Layer: 5
   m_Name: BulletCount
-  m_TagString: Untagged
+  m_TagString: BulletCount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,7 +352,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 0}
-  bulletInGunCountText: {fileID: 7716638268077699048}
   fireSound: {fileID: 0}
   noAmmoSound: {fileID: 0}
   reloadSound: {fileID: 0}

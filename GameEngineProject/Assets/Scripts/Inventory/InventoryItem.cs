@@ -37,14 +37,10 @@ public class InventoryItem : MonoBehaviour, IDeselectHandler
         GameObject[] deleteButtons;
         deleteButtons = GameObject.FindGameObjectsWithTag("DeleteButton");
 
-        Debug.Log(deleteButtons.Length);
-
         for (int i = 0; i < deleteButtons.Length; i++)
         {
-            Debug.Log(i);
             if (deleteButtons[i] == this.deleteButton)
             {
-                Debug.Log("i:" + i + "delete button: " + this.deleteButton.name);
                 if (isUsed)
                 {
                     Debug.Log("is Used");

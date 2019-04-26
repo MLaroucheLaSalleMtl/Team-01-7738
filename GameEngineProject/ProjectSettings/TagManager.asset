@@ -7,6 +7,9 @@ TagManager:
   - ItemDescriptionTag
   - DeleteButton
   - DeleteButtonPosition
+  - Gun
+  - BulletCount
+  - Monster
   layers:
   - Default
   - TransparentFX
