@@ -9621,7 +9621,8 @@ PrefabInstance:
       propertyPath: defaultOptions.Array.data[1]
       value: 
       objectReference: {fileID: 1081931823}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1074356730, guid: 89e05ca93ef419b4c8ea44dcfcbd58df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 89e05ca93ef419b4c8ea44dcfcbd58df, type: 3}
 --- !u!4 &476325219 stripped
 Transform:
@@ -12942,7 +12943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 20, y: -25.000061}
+  m_AnchoredPosition: {x: 20, y: -25}
   m_SizeDelta: {x: -260, y: -250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628523533
@@ -38440,7 +38441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: -25.000061}
+  m_AnchoredPosition: {x: 25, y: -25}
   m_SizeDelta: {x: -250, y: -250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723341066
